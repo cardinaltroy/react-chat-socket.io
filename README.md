@@ -16,6 +16,7 @@ What we have?
 
 # <a name="usage">Usage</a>
 Server: npm run dev
+
 Client: npm start
 
 You can change chat size in App.css :)
