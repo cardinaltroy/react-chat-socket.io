@@ -1,0 +1,169 @@
+body{
+    background: #0f0f0f;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+.Chat{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111111;
+    width: 700px;
+    height: 51vh;
+    border-right: 2px solid #1b1b1b;
+    position: relative;
+}
+.Flex{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #1b1b1b;
+    padding: 10px 10px 0px 10px;
+    margin-top: 10px;
+    height: calc(100% - 88px);
+}
+.Rooms{
+    width: 25%;
+}
+.Messages{
+    width: 50%;
+}
+.Users{
+    width: 25%;
+}
+
+
+.Auth{
+    position: absolute;
+    text-align: center;
+    left: calc(50% - 225px/2);
+    top: calc(50% - 90px);
+}
+.Auth button, .Auth input{
+    padding: 15px;
+    margin: 15px;
+    background: #0f0f0f;
+    color:white;
+}
+.Auth button{
+    width: 195px;
+}
+
+
+.Messages{
+    border-left: 2px solid #1b1b1b;
+    border-right: 2px solid #1b1b1b;
+    position: relative;
+}
+.Messages li{
+    word-break: break-all;
+}
+.Messages .inputs{
+    padding: 10px;
+    position: absolute;
+    width: calc(100% - 20px);
+    bottom:0;
+    border-top: 1px solid white;
+}
+.Messages .inputs input{
+    width: calc(100% - 83px);
+}
+.Messages .inputs button{
+    width: 60px;
+}
+.Messages .inputs input, .Messages .inputs button{
+    padding: 10px;
+    background: #0f0f0f;
+    color:white;
+}
+.Messages .msg{
+    padding: 10px;
+    overflow-y:scroll;
+    height: calc(100% - 60px);
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+.msg::-webkit-scrollbar { width: 0;}
+
+
+.Rooms{
+    height: 100%;
+    overflow: hidden;
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+.Rooms::-webkit-scrollbar { width: 0;}
+.Rooms li{
+    border: 2px solid #1b1b1b;
+    border-radius: 5px;
+    background: #0f0f0f;
+    margin: 10px 10px 10px 0;
+    padding: 15px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.roomName, .roomJoin{
+    background: #0f0f0f;
+    color:white;
+    margin: 10px 0 10px 0;
+    padding: 15px;
+}
+.roomName{
+    width: calc(100% - 100px);
+    border-radius: 5px 0 0 5px;
+}
+.roomJoin{
+    border-radius: 0 10px 10px 0;
+}
+.Rooms .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 25px);
+    height: 19px;
+    display: inline-block;
+    vertical-align: top;
+    word-break: keep-all;
+}
+.Rooms li button{
+    background: none;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: red;
+    display: inline-block;
+    vertical-align: top;
+}
+.Rooms li button:hover{
+    background: red;
+    color:white;
+    cursor: pointer;
+}
+
+
+.Users{
+    height: 100%;
+    overflow: hidden;
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+.Users::-webkit-scrollbar { width: 0;}
+.Users li{
+    list-style-type: none;
+    margin: 10px;
+}
+.Users .title{
+    margin-left: 10px;
+    padding-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 40px);
+    display: inline-block;
+    vertical-align: top;
+    word-break: keep-all;
+}
+.Users .img{
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, white, black);
+    border-radius: 50%;
+    display: inline-block;
+}
